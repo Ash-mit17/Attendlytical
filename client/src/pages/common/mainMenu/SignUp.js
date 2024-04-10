@@ -148,7 +148,7 @@ export default (props) => {
             </Form.Item>
 
             <Form.Item
-              label='Staff ID/Matrix No'
+              label='Unique No'
               name='cardID'
               rules={[
                 {

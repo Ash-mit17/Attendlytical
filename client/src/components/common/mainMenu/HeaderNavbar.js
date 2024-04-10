@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { APP_LOGO_URL } from '../../../assets';
 import './HeaderNavbar.css';
 
-const { Header } = Layout;
+// const { Header } = Layout;
 
 export default () => {
   const pathname =
@@ -12,9 +12,10 @@ export default () => {
   const path = pathname.substr(1); //skip '/' character
   return (
     <div className='headerNavbar'>
-      <Header>
-        <Link to='/'>
-          <div className='headerNavbar__logo'>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div>
+          <Link to='/'>
             <Avatar
               shape="square"
               className='avatar'
@@ -25,13 +26,16 @@ export default () => {
                 console.log(err);
               }}
             />
-            <div className='headerNavbar__text'>
-              <span className='headerNavbar__text__item' style={{ color: 'white', fontWeight: 'bold' }}>Attendlytical</span>
-            </div>
+          </Link>
           </div>
-        </Link>
-        <div className='headerNavbar__menu'>
-          <Menu theme='dark' mode='horizontal' defaultSelectedKeys={[path]}>
+          <div>
+
+            <span style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }}>Attendlytical</span>
+
+          </div>
+        </div>
+        <div  style={{marginRight: '10px'}}>
+          <Menu mode='horizontal' defaultSelectedKeys={[path]}>
             <Menu.Item key='signin'>
               <Link to='/signin'>Sign in</Link>
             </Menu.Item>
@@ -40,7 +44,7 @@ export default () => {
             </Menu.Item>
           </Menu>
         </div>
-      </Header>
+      </div>
     </div>
   );
 };

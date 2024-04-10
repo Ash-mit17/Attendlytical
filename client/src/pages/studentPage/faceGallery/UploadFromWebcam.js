@@ -120,32 +120,6 @@ export const UploadFromWebcam = ({
   return (
     <Card>
       <Form>
-        <Form.Item label="Webcam">
-          <Select
-            defaultValue="Select Webcam"
-            style={{ width: 500 }}
-            onChange={handleSelectWebcam}
-          >
-            {inputDevices?.inputDevice?.map((device) => (
-              <Option key={device.deviceId} value={device.deviceId}>
-                {device.label}
-              </Option>
-            ))}
-          </Select>
-        </Form.Item>
-        <Form.Item label="Webcam Size">
-          <Select
-            defaultValue={DEFAULT_WEBCAM_RESOLUTION.label}
-            style={{ width: 200 }}
-            onChange={handleWebcamResolution}
-          >
-            {webcamResolutionType.map((type) => (
-              <Option key={type.label} value={type.label}>
-                {type.label}
-              </Option>
-            ))}
-          </Select>
-        </Form.Item>
       </Form>
       <p style={{ fontSize: "18px" }}>{waitText}</p>
 

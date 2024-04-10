@@ -212,7 +212,7 @@ export default (props) => {
             )}
           </Card>
 
-          {user.userLevel == 1 && (
+          {/* {user.userLevel == 1 && (
             <Card title={<Title level={4}>Attendance Setting</Title>}>
               <Form>
                 <Form.Item label="Mode">
@@ -246,7 +246,7 @@ export default (props) => {
                 </Form.Item>
               </Form>
             </Card>
-          )}
+          )} */}
 
           {/* For F2F, use Lecturer PC For FR */}
           {attendanceGQLQuery.data &&

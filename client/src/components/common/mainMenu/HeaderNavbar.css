@@ -36,7 +36,12 @@
 }
 
 .headerNavbar .avatar{
-    top: 10px;
     float: left;
     margin-right: 10px;
+    margin-left: 5px;
+}
+
+.headerNavbar{
+    background-color: #99f;
+    padding: 10px 0;
 }

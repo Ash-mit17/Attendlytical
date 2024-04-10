@@ -20,6 +20,7 @@ export default () => {
               <Texty
                 type="left"
                 mode="random"
+                style={{fontFamily: "Times New Roman"}}
               >
                 Welcome to Attendlytical
               </Texty>
