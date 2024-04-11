@@ -84,14 +84,14 @@ export default () => {
           to='/notification'
           title={`Notification (${uncheckedNotificationCount})`}
         >
-          <div className='greeting__notification'>
+          {/* <div className='greeting__notification'>
             <Badge count={uncheckedNotificationCount}>
               <Avatar
                 icon={<BellOutlined />}
                 style={{ backgroundColor: 'orange' }}
               />
             </Badge>
-          </div>
+          </div> */}
         </Link>
       </Title>
     </Header>

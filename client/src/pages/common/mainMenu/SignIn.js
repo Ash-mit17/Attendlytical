@@ -95,7 +95,7 @@ export default (props) => {
             onFinish={onSubmit}
           >
             <br />
-            <h1 style={{ textAlign: 'center'}}>Login</h1>
+            <p style={{ textAlign: 'center', fontSize: '20px' }}>Login</p>
             <Form.Item
               label='Email'
               name='email'
@@ -125,14 +125,16 @@ export default (props) => {
             </Form.Item>
 
             <Form.Item>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
               <Button
-                type='primary'
+                type='default'
                 htmlType='submit'
                 loading={loading}
                 disabled={pressedGoogleLogin || loginGoogleUserStatus.loading}
               >
                 Submit
               </Button>
+            </div>
             </Form.Item>
           </Form>
         </Card>

@@ -23,12 +23,10 @@
 }
 .headerNavbar__text__item:first-child{
     font-weight: bold;
-    color: #99f;
     margin-right: 5px;
 }
 .headerNavbar__text__item:nth-child(2){
     font-weight: bold;
-    color: #fff;
     margin-right: 5px;
 }
 .headerNavbar__menu{
@@ -42,6 +40,5 @@
 }
 
 .headerNavbar{
-    background-color: #99f;
     padding: 10px 0;
 }

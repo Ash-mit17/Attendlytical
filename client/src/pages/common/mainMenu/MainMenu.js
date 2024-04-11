@@ -15,14 +15,14 @@ export default () => {
       <HeaderNavbar />
       <Content>
         <Row align="middle">
-          <Col style={{ top: '100px' }} span={24} align="middle">
+          <Col style={{ top: '100px'}} span={24} align="middle">
             <Title level={5}>
               <Texty
                 type="left"
                 mode="random"
                 style={{fontFamily: "Times New Roman"}}
               >
-                Welcome to Attendlytical
+                Welcome to Secure attendance
               </Texty>
             </Title>
             <Texty
@@ -33,12 +33,12 @@ export default () => {
               An attendance tracking app with ai based facial recognition
             </Texty>
 
-            <br />
-            <Button type='primary' htmlType='submit'>
-              <Link to='/signup'>Get Started</Link>
-            </Button>
-            <Divider />
-            <div>
+            <div style={{padding : "30px 0"}}>
+              <Button type='primary' htmlType='submit'>
+                <Link to='/signup'>Get Started</Link>
+              </Button>
+            </div>
+            <div style={{padding: "50px 0"}}>
               First time user? Please visit <Link to='/userguidelines'> User Guidelines</Link>
             </div>
           </Col>

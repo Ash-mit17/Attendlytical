@@ -14,7 +14,7 @@ export default () => {
     <div className='headerNavbar'>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div>
+          {/* <div>
           <Link to='/'>
             <Avatar
               shape="square"
@@ -27,22 +27,30 @@ export default () => {
               }}
             />
           </Link>
-          </div>
+          </div> */}
           <div>
-
-            <span style={{ color: 'white', fontSize: '20px', fontWeight: 'bold' }}>Attendlytical</span>
-
+            <Link to="/">
+              <span style={{ color: '#FEE715', fontSize: '20px', fontWeight: 'bold', marginLeft: '10px' }}>Secure attendance</span>
+            </Link>
           </div>
         </div>
-        <div  style={{marginRight: '10px'}}>
-          <Menu mode='horizontal' defaultSelectedKeys={[path]}>
+        <div style={{ marginRight: '10px' }}>
+          {/* <Menu mode='horizontal' defaultSelectedKeys={[path]}>
             <Menu.Item key='signin'>
               <Link to='/signin'>Sign in</Link>
             </Menu.Item>
             <Menu.Item key='signup'>
               <Link to='/signup'>Sign up</Link>
             </Menu.Item>
-          </Menu>
+          </Menu> */}
+          <div>
+            <Link to='/signin'>
+              <span style={{ color: 'white', fontSize: '15px', marginLeft: '10px' }}>SignIn</span>
+            </Link>
+            <Link to='/signup'>
+              <span style={{ color: 'white', fontSize: '15px', marginLeft: '10px' }}>SignUp</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
